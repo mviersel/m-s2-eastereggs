@@ -1,0 +1,100 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: black;
+    background-image: url('enormscreenshot.png');
+    background-size: cover;
+    width: auto;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#achtergrond {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: flex;
+    justify-content: center;
+}
+
+#main {
+    width: 1000px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#game {
+    width: 100%;
+    height: 200px;
+    background-color: #111;
+    border: 1px solid white;
+    /* padding-bottom: 3px; */
+    padding-left: 15px;
+}
+
+#character {
+    width: 20px;
+    height: 50px;
+    background-image: url('enormcharacter.png');
+    position: relative;
+    top: 150px;
+}
+.animate{
+    animation: spring 600ms infinite;
+}
+@keyframes spring {
+    0% {top: 150px;}
+    40% {top: 100px;}
+    60% {top: 100px;}
+    100% {top: 150px;}
+}
+
+#obstacle {
+    width: 40px;
+    height: 20px;
+    background-image: url('enormobstacle.png');
+    position: relative;
+    top: 130px;
+    left: 980px;
+    animation: obstacle 1.5s infinite linear;
+}
+@keyframes obstacle {
+    0% {left: 960px;}
+    100% {left: -20px;}
+}
+
+#result {
+    height: 50px;
+    width: auto;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    font-weight: 800;
+    font-size: 40px;
+}
+
+#tekst {
+    height: 50px;
+    width: auto;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #c27878;
+    font-weight: 800;
+    font-size: 40px;
+}
+
+/* #score {
+    overflow: hidden;
+    height: 50px;
+    width: auto;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #a1d788;
+    font-weight: 800;
+    font-size: 40px;
+} */
